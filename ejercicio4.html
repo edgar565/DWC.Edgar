@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Salario</title>
+    <script src="ejercicio3.js" defer></script> <!-- Llamada al archivo JavaScript externo -->
+</head>
+<body>
+
+    <h1>Calculadora de Salario</h1>
+
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" placeholder="Introduce el nombre"><br><br>
+
+    <label for="apellidos">Apellidos:</label>
+    <input type="text" id="apellidos" placeholder="Introduce los apellidos"><br><br>
+
+    <label for="salario">Salario:</label>
+    <input type="number" id="salario" placeholder="Introduce el salario"><br><br>
+
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" placeholder="Introduce la edad"><br><br>
+
+    <button onclick="calcularSalario()">Calcular Salario</button>
+
+    <h2>Resultado:</h2>
+    <div id="resultado"></div>
+
+</body>
+</html>
