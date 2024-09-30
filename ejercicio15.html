@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Multiplicar del 5</title>
+    <script>
+        function generarTablaMultiplicar() {
+            // Obtener el contenedor donde se mostrará la tabla
+            const contenedor = document.getElementById('tabla');
+            contenedor.innerHTML = ''; // Limpiar el contenedor
+
+            // Generar la tabla de multiplicar del 5
+            for (let i = 1; i <= 10; i++) {
+                const resultado = 5 * i;
+                // Crear un elemento de lista para mostrar el resultado
+                const elemento = document.createElement('li');
+                elemento.textContent = `5 x ${i} = ${resultado}`;
+                contenedor.appendChild(elemento);
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Tabla de Multiplicar del 5</h1>
+    <button onclick="generarTablaMultiplicar()">Mostrar Tabla</button>
+    
+    <ul id="tabla"></ul>
+</body>
+</html>
