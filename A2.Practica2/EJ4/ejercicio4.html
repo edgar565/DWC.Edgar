@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Traspuesta de Matriz</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      #matriz {
+        border-collapse: collapse;
+      }
+      #matriz th,
+      #matriz td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Calculadora de Traspuesta de Matriz</h1>
+    
+    <table id="matriz">
+      <tr>
+        <th>Matriz Original</th>
+        <th>Traspuesta</th>
+      </tr>
+      <tr>
+        <td>
+          <pre id="matriz-original"></pre>
+        </td>
+        <td>
+          <pre id="traspuesta"></pre>
+        </td>
+      </tr>
+    </table>
+    <button onclick="traspuesta()">Calcular Traspuesta</button>
+    <script src="ejercicio4.js"></script>
+  </body>
+</html>
