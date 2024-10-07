@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Lotería</title>
+    <link rel="stylesheet" href="ejercicio7.css">
+    <link rel="icon" href="favicon.webp" type="image/png">
+</head>
+<body>
+
+    <div class="container">
+        <h1>¡Adivina los Números de la Lotería!</h1>
+        <p>Intenta adivinar los 5 números de la lotería entre 1 y 10</p>
+
+        <div class="input-container">
+            <input type="number" id="userNumber" min="1" max="10" placeholder="Introduce un número">
+            <button onclick="intentarAdivinar()">Probar número</button>
+        </div>
+
+        <div id="resultado" class="resultado"></div>
+        <p id="intentos"></p>
+
+        <button onclick="reiniciarJuego()" class="reset-button">Reiniciar Juego</button>
+    </div>
+
+    <script src="ejercicio7.js"></script>
+</body>
+</html>
